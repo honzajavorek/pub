@@ -86,7 +86,7 @@ class Task(object):
             yield re.split(r'\s+', line)
 
     def install(self, requirements):
-        call(['pip', 'install', '-r', requirements])
+        call(['pip', 'install', '-r', requirements, '-q'])
 
     def process(self, script_repo, pages_repo):
         # prepare tmp directory
