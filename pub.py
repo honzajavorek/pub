@@ -120,8 +120,10 @@ class Task(object):
             self.log('Publishing.')
             self.publisher.run()
 
-        except ImportError:
-            self.log('Missing requirements.')
+        except ImportError as e:
+            self.log('Missing requirements ({}).'.format(str(e)))
+        except Exception as e:
+            self.log('Script failed ({}).'.format(str(e)))
 
     def run(self):
         self.log('Starting.')
