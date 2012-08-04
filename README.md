@@ -10,6 +10,8 @@ Pub is a simple automatic publisher of static pages only via GitHub and Heroku:
 
 ## Installation
 
+I assume you are familiar with Heroku and GitHub.
+
 Fork & clone this repository. Then create `.env` file similar to this:
 
     GITHUB_USERNAME=honzajavorek
@@ -24,3 +26,5 @@ Create `scripts` file so it looks similar to this:
 The first repo is the one with script (`pubfile.py`). The other one has to have ready `gh-pages` branch and is treated as destination for publishing.
 
 If you are done with this, commit your changes. Then create your Heroku app by `heroku create` and `git push heroku master`. Be sure you have no all-time-running processes: `heroku ps:scale worker=0`. Add scheduler by `heroku addons:add scheduler:standard` and adjust it's settings on admin panel. Use `worker` as the task name.
+
+You can test & debug by `foreman start`.
