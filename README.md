@@ -1,6 +1,13 @@
+
 # Pub
 
-Pub is a simple automatic publisher of static pages only via GitHub and Heroku:
+Pub is a simple automatic publisher of static pages only via GitHub and Heroku.
+
+## Status: ACTIVE
+
+Under active development and maintenance.
+
+## How does it work?
 
 1. Uses Heroku Scheduler to be launched once a day.
 2. In `scripts` file it has a list of GitHub repos with scripts (scrapers, generators), coupled with GitHub Pages repos where the output of each script should go.
@@ -8,9 +15,13 @@ Pub is a simple automatic publisher of static pages only via GitHub and Heroku:
 4. Launches `pubfile.py` in root of each script repo. Script performs changes on pages.
 5. Commits changes on pages and pushes them to GitHub.
 
+## Why Pub?
+
+_Pub_ is short from _publish_, of course!
+
 ## Installation
 
-I assume you are familiar with Heroku and GitHub.
+It's Heroku worker app. I assume you are familiar with Heroku and GitHub.
 
 Fork & clone this repository. Then create `.env` file similar to this:
 
@@ -29,6 +40,9 @@ If you are done with this, commit your changes. Then create your Heroku app by `
 
 You can test & debug by `foreman start` (locally) or `heroku run python pub.py` (remotely, Heroku stack).
 
-## Requirements
+## License: ISC
 
-Pub has no requirements.
+© 2012 Jan Javorek &lt;<a
+href="mailto:jan.javorek&#64;gmail.com">jan.javorek&#64;gmail.com</a>&gt;
+
+This work is licensed under [ISC license](https://en.wikipedia.org/wiki/ISC_license).
