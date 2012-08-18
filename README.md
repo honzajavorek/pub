@@ -32,7 +32,7 @@ Fork & clone this repository. Then create `.env` file similar to this:
 
 Create `scripts` file so it looks similar to this:
 
-    honzajavorek/kino   honzajavorek/blog
+    honzajavorek/kino   honzajavorek/honzajavorek.cz
 
 The first repo is the one with script (`pubfile.py`). The other one has to have ready `gh-pages` branch and is treated as destination for publishing.
 
