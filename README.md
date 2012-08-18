@@ -21,9 +21,7 @@ _Pub_ is short from _publish_, of course!
 
 ## Installation
 
-It's Heroku worker app. I assume you are familiar with Heroku and GitHub.
-
-Fork & clone this repository. Then create `.env` file similar to this:
+It's Heroku scheduler app. I assume you are familiar with Heroku and GitHub. Fork & clone this repository. Then create `.env` file similar to this:
 
     GITHUB_USERNAME=honzajavorek
     GITHUB_PASSWORD=...
