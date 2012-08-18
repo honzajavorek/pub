@@ -81,9 +81,9 @@ class Task(object):
 
     def read_definitions(self):
         with open(config['scripts_file']) as f:
-            lines = f.readlines()
+            lines = filter(None, f.readlines())
         for line in lines:
-            yield re.split(r'\s+', line)
+            yield filter(None, re.split(r'\s+', line))
 
     def install(self, requirements):
         call(['pip', 'install', '-r', requirements, '-q'])
