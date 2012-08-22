@@ -4,6 +4,10 @@
 from fabric.api import *
 
 
+def debug():
+    local('python pub.py')
+
+
 def deploy():
     local('git push origin master')
     local('git push heroku master')
