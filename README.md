@@ -2,12 +2,6 @@
 
 Pub is a simple automatic publisher of static pages only via GitHub and Heroku.
 
-## Status: IDLE
-
-As I do not need something like this any more, this project became idle. [No future, no future for me!](https://www.youtube.com/watch?v=yqrAPOZxgzU)
-However, current version works fine. If you are interested in using or
-programming Pub, [fork it](https://github.com/honzajavorek/pub/fork)!
-
 
 
 ## How does it work?
